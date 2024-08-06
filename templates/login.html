@@ -1,0 +1,143 @@
+{% from "bootstrap5/form.html" import render_form %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="static/assets/css/styles.css">
+    <link href="https://fonts.cdnfonts.com/css/grathering" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/grathering');
+        body{
+             position: relative;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0; /* fallback color */
+
+
+        }
+
+         body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('static/assets/images/background.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8; /* Change this value to adjust the opacity */
+            z-index: -1; /* Ensure the background image stays behind other content */
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1000px;
+            background-color: #EEF5FF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .left-side, .right-side {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-side {
+            background-color: #FFF455;
+            color: #304463;
+            flex: 1;
+        }
+
+        .left-side .logo img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .right-side {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .login-form {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #4535C1;
+            border-radius: 4px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #FFBF00;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #FFBF00;
+        }
+
+
+    </style>
+</head>
+<body>
+ <div class="container">
+        <div class="left-side">
+            <div class="logo">
+                <a href="/">
+                        <img src="https://cdn-icons-png.freepik.com/512/10550/10550857.png" width="200" height="150">
+                    </a>
+            </div>
+            <h1 style="font-family:gathering; text-align:center">Welcome to <strong>To Do Buddy</strong>!</h1>
+        </div>
+        <div class="right-side">
+            <div class="login-form">
+                <h2>Login</h2>
+                {{ render_form(form) }}
+
+
+                <h6>New to TO DO BUDDY <a href="{{ url_for('register') }}" > Sign In</a></h6>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+
+    </script>
+</body>
+</html>
