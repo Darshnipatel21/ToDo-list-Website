@@ -52,38 +52,59 @@ flask shell
 >>> db.create_all()
 >>> exit()
 ```
-###Run the Application
+### Run the Application
 
 ```bash
 flask run
 Open your web browser and navigate to http://127.0.0.1:5000.
 ```
-### Usage
+## Usage
 
-## User Registration
-Visit the home page.
-Click on "Register".
-Fill out the registration form and submit.
+### User Registration
 
-## User Login
-Click on "Login".
-Enter your registered email and password.
+1. Visit the home page.
+2. Click on "Register".
+3. Fill out the registration form and submit.
 
-## Managing Tasks
-Add a Task: Click on the "Add Task" button, fill out the form, and submit.
-Update Task Status: Use the provided buttons to move tasks between "To Do", "Doing", and "Done".
-Delete a Task: Click on the "Remove" button to delete a task.
-Contributing
+### User Login
+
+1. Click on "Login".
+2. Enter your registered email and password.
+
+### Managing Tasks
+
+- **Add a Task:** Click on the "Add Task" button, fill out the form, and submit.
+- **Update Task Status:** Use the provided buttons to move tasks between "To Do", "Doing", and "Done".
+- **Delete a Task:** Click on the "Remove" button to delete a task.
+
+## Contributing
+
 Contributions are welcome! Please follow these steps:
 
-### Fork the repository.
-Create your feature branch (git checkout -b feature/your-feature-name).
-Commit your changes (git commit -am 'Add some feature').
-Push to the branch (git push origin feature/your-feature-name).
-Create a new Pull Request.
+1. **Fork the repository.**
+2. **Create your feature branch**
 
-****Contact****
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+
+3. **Commit your changes**
+
+    ```bash
+    git commit -am 'Add some feature'
+    ```
+
+4. **Push to the branch**
+
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+
+5. **Create a new Pull Request.**
+
+## Contact
+
 If you have any questions or suggestions, feel free to reach out:
 
-Email: darshni211196@gmail.com
-GitHub: https://github.com/Darshnipatel21
+- **Email:** [darshni211196@gmail.com](mailto:darshni211196@gmail.com)
+- **GitHub:** [https://github.com/Darshnipatel21](https://github.com/Darshnipatel21)
