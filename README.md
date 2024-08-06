@@ -30,18 +30,20 @@ Ensure you have the following installed on your local machine:
 ```bash
 git clone https://github.com/yourusername/todo-list-app.git
 cd todo-list-app
+```
 
 ### Create and Activate Virtual Environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
 
 ### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
-
+```
 ### Set Up the Database
 
 ```bash
@@ -49,13 +51,13 @@ flask shell
 >>> from app import db
 >>> db.create_all()
 >>> exit()
-
+```
 ###Run the Application
 
 ```bash
 flask run
 Open your web browser and navigate to http://127.0.0.1:5000.
-
+```
 ### Usage
 
 ## User Registration
